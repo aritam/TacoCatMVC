@@ -1,8 +1,39 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container pt-0">
+    <div class="row justify-content-center">
+        <div class="col">
+            <img class="mx-auto rounded img-fluid d-block" src="/img/tacocatlogo.png" alt="Taco Cat logo" />
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-12">
+            <div class="mb-5">
+                <h2 class="mb-5">TACOCAT - A coding challenge</h2>
+                <h5>TacocaT is a palindrome. A palindrome is a word, phrase or sequence that reads the same backward as forward. <i>e.g. tacocat</i></h5>
+                <h5>This program can check if what you type is a palindrome.</h5>
+            </div>
+            <div class="mb-5">
+                <a class="btn btn-outline-secondary" asp-area="" asp-controller="Home" asp-action="Reverse">Try it out</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-lg-8 col-md-6">
+            <h4 class="mb-3">Instructions:</h4>
+            <p>Write a program that allows the user to enter a word or sentence.</p>
+            <p>The program should display the word or sentence backwards and whether the user's input is a palindrome or not.</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div>
+                <h4 class="mb-3">Technologies used</h4>
+                <i class="fab fa-microsoft fa-3x me-3" alt="dotnet" id="msicon" ></i>
+                <i class="fab fa-js-square fa-3x me-3" id="jsicon"></i>
+                <i class="fab fa-bootstrap fa-3x me-3" id="bsicon"></i>
+                <i class="fab fa-html5 fa-3x me-3" id="html5icon"></i>
+                <i class="fab fa-css3-alt fa-3x me-3" id="css3icon"></i>
+            </div>
+        </div>
+    </div>
 </div>
