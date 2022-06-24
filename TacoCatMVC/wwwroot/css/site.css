@@ -9,9 +9,6 @@ body {
   color: var(--dark-color);
 }
 
-nav {
-  background-color: var(--dark-color);
-}
 
 footer {
   background-color: var(--dark-color);
@@ -54,18 +51,3 @@ footer {
   color: rgb(11, 82, 214);
 }
 
-#hero-picture {
-  max-height:30vh;
-}
-
-
-code[class*="language-"],
-pre[class*="language-"] {
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-}
-
-code {
-  font-size: 80%;
-}

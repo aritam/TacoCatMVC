@@ -1,28 +1,28 @@
 @model TacoCatMVC.Models.Palindrome
+@{
+    ViewData["Title"] = "Palindrome";
+}
 
 <div class="container col-xxl-8 px-4 py-5 mt-5">
     <div class="row gy-2 h-100 row-cols-md-2 row-cols-1">
         <div class="col border-2 border-end">
-            <h3 mb-3">
+            <h3 class="mb-3">
                 A palindrome is a word or phrase that reads the same when the order is reversed such as: 
                                     <i>tacocat</i>
             </h3>
-            <p>
-                Test your word ->
-            </p>
             <h2 class="mt-5 border-bottom border-2">Instructions</h2>
-            <p>Tell TacoCat your word or phrase and he shall tell you whether it is a palindrome or not :3 </p>
+            <p>Tell TacoCat your word or phrase and he shall tell you whether it is a palindrome or not :3 </p> 
         </div>
         <div class="col">
             <div>
-                <h5>Palindrome:  </h5>
+                <h5>Test your word:  </h5>
                 @* Form goes here *@
                 <form class="row gy-2 gx-3" asp-action="Reverse" asp-controller="Home" method="post">
                     <div class="col">
-                        <input asp-for="InputWord" class="form-control" value="@Model.InputWord" placeholder="* type a word"/>
+                        <input asp-for="InputWord" class="form-control" value="@Model.InputWord">
                     </div>
                     <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
-                        <button id="btnSubmit" type="submit" class="btn btn-secondary">Test</button>
+                        <button id="btnSubmit" type="submit" class="btn btn-secondary">Submit</button>
                     </div>
                 </form>
                 <h5 class="mt-5 border-bottom border-2">Reversed Result:</h5>

@@ -19,11 +19,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
     [HttpGet]
     public IActionResult Reverse()
     {
@@ -56,7 +51,7 @@ public class HomeController : Controller
         else
         {
             palindrome.IsPalindrome = false;
-            palindrome.Message = $"Sorry {palindrome.InputWord} is not a palindrome :o ";
+            palindrome.Message = $"Sorry, '{palindrome.InputWord}' is not a palindrome :( ";
         }
 
         return View(palindrome);
